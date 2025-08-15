@@ -1,6 +1,8 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
+import Products from "@/components/Products";
+import FoodTypes from "@/components/FoodTypes";
 import About from "@/components/About";
 import Location from "@/components/Location";
 import Gallery from "@/components/Gallery";
@@ -13,14 +15,15 @@ const Index = () => {
       <Header />
       <main>
         <Hero />
-        <Services />
+        <Products />
+        <FoodTypes />
         <About />
         <Location />
         <Gallery />
       </main>
       <Footer />
       <WhatsAppFloat />
-      
+
       {/* JSON-LD Structured Data */}
       <script
         type="application/ld+json"
@@ -41,7 +44,7 @@ const Index = () => {
                 "addressCountry": "BR"
               },
               {
-                "@type": "PostalAddress", 
+                "@type": "PostalAddress",
                 "streetAddress": "Barão do Cerro Azul, 1363",
                 "addressLocality": "Piraquara",
                 "addressRegion": "PR",

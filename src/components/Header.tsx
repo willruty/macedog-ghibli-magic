@@ -8,19 +8,20 @@ const Header = () => {
 
   const navigation = [
     { name: "Início", href: "#home" },
-    { name: "Serviços", href: "#services" },
+    { name: "Produtos", href: "#products" },
+    { name: "Rações", href: "#types-of-food" },
     { name: "Sobre", href: "#about" },
     { name: "Localização", href: "#location" },
     { name: "Galeria", href: "#gallery" },
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-card/95 backdrop-blur-sm border-b border-border">
-      <nav className="container mx-auto px-4 py-4">
+    <header className="top-0 left-0 right-0 z-50 backdrop-blur-sm border-b border-border" style={{ background: "#FFF9E9" }}>
+      <nav className="container mx-auto px-4 py-2">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <img src={logoImage} alt="Macedog" className="w-10 h-10" />
+            <img src={logoImage} alt="Macedog" className="w-20 h-20 rounded-lg" />
             <span className="text-xl font-bold text-primary">Macedog</span>
           </div>
 

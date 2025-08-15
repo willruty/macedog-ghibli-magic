@@ -16,7 +16,7 @@ const Services = () => {
       title: "Vacinas e Cuidados",
       description: "Prevenção e cuidados veterinários essenciais para a saúde do seu companheiro.",
       image: serviceVaccineImage,
-      features: ["Vacinação completa", "Vermífugos", "Antipulgas", "Consultas veterinárias"]
+      features: ["Vacinas iniciais", "Vermífugos", "Antipulgas"]
     },
     {
       title: "Brinquedos e Diversão",
@@ -28,7 +28,7 @@ const Services = () => {
       title: "Cuidados Especiais",
       description: "Produtos e serviços para o bem-estar completo do seu animal de estimação.",
       image: serviceCareImage,
-      features: ["Higiene e banho", "Acessórios", "Camas e casinhas", "Produtos de limpeza"]
+      features: ["Acessórios", "Camas e casinhas", "Produtos de limpeza"]
     }
   ];
 
@@ -40,22 +40,22 @@ const Services = () => {
             Nossos Serviços
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Oferecemos tudo que seu pet precisa com qualidade e carinho. 
+            Oferecemos tudo que seu pet precisa com qualidade e carinho.
             Conheça nossos principais serviços.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, index) => (
-            <Card 
-              key={service.title} 
+            <Card
+              key={service.title}
               className="hover-scale transition-smooth shadow-warm border-0 bg-card/80 backdrop-blur-sm animate-enter"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <CardHeader className="p-0">
                 <div className="relative overflow-hidden rounded-t-lg">
-                  <img 
-                    src={service.image} 
+                  <img
+                    src={service.image}
                     alt={service.title}
                     className="w-full h-48 object-cover hover:scale-110 transition-smooth"
                   />
@@ -70,7 +70,7 @@ const Services = () => {
                   </CardDescription>
                 </div>
               </CardHeader>
-              
+
               <CardContent className="px-6 pb-6">
                 <ul className="space-y-2">
                   {service.features.map((feature) => (

@@ -18,13 +18,13 @@ const About = () => {
           {/* Image */}
           <div className="relative animate-fade-in">
             <div className="relative z-10">
-              <img 
-                src={vetImage} 
+              <img
+                src={vetImage}
                 alt="Veterinário cuidando de um pet na Macedog"
                 className="w-full h-auto rounded-2xl shadow-warm hover-scale"
               />
             </div>
-            
+
             {/* Decorative elements */}
             <div className="absolute -top-6 -left-6 w-32 h-32 bg-primary/10 rounded-full blur-2xl" />
             <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-accent/10 rounded-full blur-xl" />
@@ -35,43 +35,34 @@ const About = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
               Sobre a Macedog
             </h2>
-            
+
+            <p className="text-xl text-bold mb-2">Missão</p>
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              Há mais de 10 anos cuidando com amor dos seus pets em Piraquara-PR. 
-              A Macedog nasceu da paixão pelos animais e do compromisso em oferecer 
-              produtos e serviços de qualidade.
+              Proporcionar saúde, bem-estar e felicidade aos animais de estimação,
+              oferecendo produtos de alta qualidade, atendimento próximo e informações
+              que ajudem os tutores a cuidarem melhor de seus pets.
             </p>
-            
+
+            <p className="text-xl text-bold mb-2">Visão</p>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              Nosso time de especialistas está sempre pronto para orientar sobre 
-              nutrição, cuidados veterinários e bem-estar animal. Temos duas lojas 
-              estrategicamente localizadas para atender melhor você e seu pet.
+              Ser referência na região como a loja de produtos para animais mais confiável,
+              reconhecida pelo carinho com que trata cada cliente e pelo compromisso com a qualidade e a satisfação.
             </p>
 
-            {/* Stats */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-              {stats.map((stat, index) => (
-                <Card 
-                  key={stat.label} 
-                  className="text-center p-4 border-0 bg-muted/50 hover-scale transition-smooth"
-                  style={{ animationDelay: `${index * 0.1}s` }}
-                >
-                  <CardContent className="p-0">
-                    <stat.icon className="w-8 h-8 text-primary mx-auto mb-2" />
-                    <div className="text-2xl font-bold text-foreground mb-1">
-                      {stat.value}
-                    </div>
-                    <div className="text-xs text-muted-foreground">
-                      {stat.label}
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
+            <p className="text-xl text-bold mb-2">Quem somos</p>
+            <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+              O Aviário Macedog nasceu da paixão pelos animais e do desejo de oferecer o melhor para eles. Aqui,
+              cada produto é escolhido com cuidado, pensando na nutrição, saúde e felicidade dos pets.
+              Trabalhamos com rações de qualidade, acessórios, brinquedos e itens de higiene, sempre
+              buscando unir preço justo e excelente atendimento.
 
-            <Button 
-              variant="default" 
-              size="lg" 
+              Mais do que uma loja, somos um ponto de encontro para quem ama animais e quer vê-los
+              vivendo com mais energia, beleza e alegria.
+            </p>
+
+            <Button
+              variant="default"
+              size="lg"
               className="gradient-warm hover-scale shadow-warm"
               asChild
             >

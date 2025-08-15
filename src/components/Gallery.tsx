@@ -1,7 +1,7 @@
-import galleryFacadeImage from "@/assets/gallery-facade.jpg";
-import galleryInteriorImage from "@/assets/gallery-interior.jpg";
-import galleryDogToyImage from "@/assets/gallery-dog-toy.jpg";
-import galleryCatBedImage from "@/assets/gallery-cat-bed.jpg";
+import galleryFacadeImage from "@/assets/fachada.jpg";
+import galleryInteriorImage from "@/assets/casinhas.jpg";
+import galleryDogToyImage from "@/assets/toys-1.jpg";
+import galleryCatBedImage from "@/assets/front-door.jpg";
 
 const Gallery = () => {
   const images = [
@@ -17,13 +17,13 @@ const Gallery = () => {
     },
     {
       src: galleryDogToyImage,
-      alt: "Cachorro feliz brincando com brinquedo",
-      title: "Momentos de Alegria"
+      alt: "Brinquedos para Cachorros",
+      title: "Brinquedos para Cachorros"
     },
     {
       src: galleryCatBedImage,
-      alt: "Gato dormindo confortavelmente em sua cama",
-      title: "Conforto e Aconchego"
+      alt: "Fachada da loja",
+      title: "Parcerias com outras marcas"
     }
   ];
 
@@ -78,7 +78,7 @@ const Gallery = () => {
             rel="noopener noreferrer"
             className="story-link text-primary hover:text-primary-glow text-lg font-medium transition-smooth"
           >
-            Agende sua visita pelo WhatsApp
+            Entrar em contato
           </a>
         </div>
       </div>

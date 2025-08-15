@@ -4,23 +4,22 @@ import { MapPin, Clock, Phone, Instagram } from "lucide-react";
 const Location = () => {
   const locations = [
     {
-      name: "Loja Centro",
+      name: "Loja Jardim Bela Vista",
       address: "Av. Centenário do Paraná, 193",
-      neighborhood: "Centro, Piraquara – PR",
+      neighborhood: "Jardim Bela Vista, Piraquara – PR",
       mapUrl: "https://maps.google.com/maps?q=Av.+Centenário+do+Paraná,+193+Centro+Piraquara+PR"
     },
     {
-      name: "Loja Jardim Bela Vista",
+      name: "Loja Centro",
       address: "Barão do Cerro Azul, 1363",
-      neighborhood: "Jardim Bela Vista, Piraquara – PR",
+      neighborhood: "Centro, Piraquara – PR",
       mapUrl: "https://maps.google.com/maps?q=Barão+do+Cerro+Azul,+1363+Jardim+Bela+Vista+Piraquara+PR"
     }
   ];
 
   const schedule = [
-    { day: "Segunda a Sexta", hours: "8h às 18h" },
-    { day: "Sábado", hours: "8h às 14h" },
-    { day: "Domingo", hours: "Fechado" }
+    { day: "Segunda a Sábado", hours: "09h às 18h45" },
+    { day: "Domingo", hours: "09h às 12h" },
   ];
 
   const contacts = [
@@ -50,7 +49,7 @@ const Location = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8">
+        <div className="grid lg:grid-cols-2 gap-8">
           {/* Locations */}
           <div className="lg:col-span-2">
             <h3 className="text-2xl font-semibold text-foreground mb-6">Nossas Lojas</h3>
@@ -85,14 +84,14 @@ const Location = () => {
           </div>
 
           {/* Schedule and Contact */}
-          <div className="space-y-8">
+          <div className="space-y-8 lg:space-y-0 lg:col-span-2 lg:flex lg:flex-row">
             {/* Schedule */}
-            <Card className="shadow-warm border-0 bg-card/80 backdrop-blur-sm animate-fade-in">
+            <Card className="shadow-warm border-0 bg-card/80 backdrop-blur-sm animate-fade-in lg:w-1/2">
               <CardHeader>
                 <CardTitle className="flex items-center text-foreground">
                   <Clock className="w-5 h-5 text-primary mr-2" />
                   Horário de Funcionamento
-                </CardTitle>
+                </CardTitle> 
               </CardHeader>
               <CardContent>
                 <div className="space-y-3">
@@ -107,7 +106,7 @@ const Location = () => {
             </Card>
 
             {/* Contact */}
-            <Card className="shadow-warm border-0 bg-card/80 backdrop-blur-sm animate-fade-in">
+            <Card className="shadow-warm border-0 bg-card/80 backdrop-blur-sm animate-fade-in lg:w-1/2 lg:ml-5 lg:h-full lg:mt-0">
               <CardHeader>
                 <CardTitle className="text-foreground">Fale Conosco</CardTitle>
               </CardHeader>
